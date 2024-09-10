@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div id="image-wrapper">
+            <div class="overlay"></div>
+            <div id="logo-container">
+                <img src="https://raw.githubusercontent.com/cardo8819/images/8ddcb261bba200be8f97b56fc8929a1c829d10db/logo.png" alt="IsabelleTF logo" id="image-logo">
+            </div>
+            <img src="https://github.com/cardo8819/images/blob/main/image1.jpg?raw=true" alt="Model looking upwards, eyes closed" class="background-img showing">
+            <img src="https://github.com/cardo8819/images/blob/main/image2.jpg?raw=true" alt="Model looking upwards, eyes closed" class="background-img">
+            <img src="https://github.com/cardo8819/images/blob/main/image3.jpg?raw=true" alt="Model looking into the distance, hair windswept" class="background-img">
+            <div id="author">
+                <span>Photo by <a href="https://unsplash.com/@jacobmejicanos" class="author-link" target="_blank">Jacob Mejicanos</a> on <a href="https://unsplash.com/" target="_blank">Unplash</a>
+                </span>
+            </div>
+        </div>
+        <div id="form-wrapper">
+            <img src="https://raw.githubusercontent.com/cardo8819/images/8ddcb261bba200be8f97b56fc8929a1c829d10db/logo.png" alt="IsabelleTF logo" id="logo">
+            <div id="form-intro">
+                <div id="business_description">
+                    <p>Welcome to The Isabelle Fashion Company, where timeless elegance meets contemporary style. As a brand inspired by
+                        the beauty and strength of women, we offer a curated collection of clothing that celebrates
+                        femininity with a modern twist. </p>
+                    <p>Sign up today to receive offers and exciting news on new products!.</p>
+                    <p>Please complete all fields marked <span class="required">*</span></p>
+                </div>
+            </div>
+            <form action="/" id="sign-up-form">
+                <div class="input-container">
+                    <input type="text" id="full-name" required placeholder="" min="3" aria-label="Full Name">
+                    <label for="full-name">Full Name: <span class="required">*</span></label>
+                    <p class="name error">Please enter more than 3 characters!</p>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" id="email" name="name" required placeholder="" aria-label="Email address">
+                    <label for="email">Email: <span class="required">*</span></label>
+                    <p class="email error">Please enter a valid email!</p>
+                </div>
+                <div class="input-container">
+                    <input type="phone" id="phone" name="phone" required placeholder="" aria-label="Phone Number">
+                    <label for="phone">Phone:<span class="required"> *</span></label>
+                    <p class="phone error">Please enter a phone number with 10 digits!</p>
+                </div>
+                <div class="input-container password">
+                    <input type="password" id="password" name="password" required placeholder="" min="7" max="20" aria-label="Password">
+                    <label for="password">Password:<span class="required"> *</span></label>
+                    <span class="material-symbols-outlined eye">
+                        visibility_off
+                    </span>
+                    <p class="password error line1 invalid">Between 7 and 20 characters in length</p>
+                    <p class="password error line2 invalid">Must include at least 1 capital letter</p>
+                    <p class="password error line3 invalid">Must include at least 1 number</p>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder=""
+                        class="invalid" aria-label="Confirm Password">
+                    <label for="confirm-password">Confirm Password:<span class="required"> *</span></label>
+                    <p class="confirm-password error">Passwords don't match!</p>
+                </div>
+                <div class="input-container">
+                    <button type="submit">Create Account</button>
+                    <p id="member">Already an existing member? Login <a href="#">here</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
